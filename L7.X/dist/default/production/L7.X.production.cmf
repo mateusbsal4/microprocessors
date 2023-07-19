@@ -1,0 +1,1123 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/xcXDffFAm/driver_tmp_19.o
+idloc IDLOC 5 2000 2000 4 2 1
+reset_vec CODE 0 0 0 3 2 1
+end_init CODE 0 C C 3 2 1
+config CONFIG 4 2007 2007 2 2 1
+$dist/default/production/L7.X.production.o
+cinit CODE 0 F F 18 2 1
+idloc IDLOC 5 2000 2000 4 2 1
+text1 CODE 0 55D 55D 29 2 1
+text2 CODE 0 7A5 7A5 C 2 1
+text3 CODE 0 638 638 1B 2 1
+text4 CODE 0 6BC 6BC 18 2 1
+text5 CODE 0 6EA 6EA 12 2 1
+text6 CODE 0 689 689 1A 2 1
+text7 CODE 0 2E5 2E5 8D 2 1
+text8 CODE 0 5D7 5D7 25 2 1
+text9 CODE 0 7F0 7F0 1 2 1
+text10 CODE 0 6D4 6D4 16 2 1
+text11 CODE 0 7E1 7E1 7 2 1
+text12 CODE 0 7E8 7E8 7 2 1
+text13 CODE 0 7B1 7B1 C 2 1
+text14 CODE 0 7D9 7D9 8 2 1
+text15 CODE 0 27 27 139 2 1
+text16 CODE 0 160 160 D4 2 1
+text17 CODE 0 454 454 3C 2 1
+text18 CODE 0 3D0 3D0 46 2 1
+text19 CODE 0 416 416 3E 2 1
+text20 CODE 0 61C 61C 1C 2 1
+text21 CODE 0 586 586 29 2 1
+text22 CODE 0 5FC 5FC 20 2 1
+text23 CODE 0 78A 78A E 2 1
+text24 CODE 0 5AF 5AF 28 2 1
+text25 CODE 0 6FC 6FC 12 2 1
+text26 CODE 0 70E 70E 12 2 1
+text27 CODE 0 7BD 7BD A 2 1
+text28 CODE 0 77A 77A 10 2 1
+text29 CODE 0 52E 52E 2F 2 1
+text30 CODE 0 798 798 D 2 1
+text31 CODE 0 490 490 3C 2 1
+text32 CODE 0 653 653 1B 2 1
+text33 CODE 0 66E 66E 1B 2 1
+text34 CODE 0 6A3 6A3 19 2 1
+text35 CODE 0 720 720 12 2 1
+text36 CODE 0 732 732 12 2 1
+text37 CODE 0 744 744 12 2 1
+text38 CODE 0 7C7 7C7 A 2 1
+text39 CODE 0 756 756 12 2 1
+text40 CODE 0 7F1 7F1 1 2 1
+text41 CODE 0 4FE 4FE 30 2 1
+text42 CODE 0 4CC 4CC 32 2 1
+text43 CODE 0 768 768 12 2 1
+idataCOMMON CODE 0 7EF 7EF 1 2 1
+maintext CODE 0 234 234 B1 2 1
+cstackCOMMON COMMON 1 70 70 6 1 1
+cstackBANK0 BANK0 1 20 20 2B 1 1
+intentry CODE 0 4 4 8 2 1
+bitbssCOMMON COMMON 1 3D0 7A 1 1 1
+bssBANK0 BANK0 1 4B 4B 10 1 1
+strings STRING 0 372 372 5E 2 1
+dataCOMMON COMMON 1 7B 7B 1 1 1
+clrtext CODE 0 7D1 7D1 8 2 1
+bssCOMMON COMMON 1 76 76 4 1 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 5B-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 5B-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 7F2-1FFF 2
+ENTRY 3-3 2
+ENTRY 7F2-1FFF 2
+CODE 3-3 2
+CODE 7F2-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7C-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 7F2-1FFF 2
+STRING 3-3 2
+STRING 7F2-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/L7.X.production.o
+F cinit CODE >2502:/tmp/xcXDffFAm/driver_tmp_1.s
+F cinit CODE >2505:/tmp/xcXDffFAm/driver_tmp_1.s
+F cinit CODE >2558:/tmp/xcXDffFAm/driver_tmp_1.s
+14 cinit CODE >2559:/tmp/xcXDffFAm/driver_tmp_1.s
+15 cinit CODE >2578:/tmp/xcXDffFAm/driver_tmp_1.s
+16 cinit CODE >2579:/tmp/xcXDffFAm/driver_tmp_1.s
+17 cinit CODE >2580:/tmp/xcXDffFAm/driver_tmp_1.s
+18 cinit CODE >2581:/tmp/xcXDffFAm/driver_tmp_1.s
+19 cinit CODE >2582:/tmp/xcXDffFAm/driver_tmp_1.s
+1E cinit CODE >2585:/tmp/xcXDffFAm/driver_tmp_1.s
+1F cinit CODE >2586:/tmp/xcXDffFAm/driver_tmp_1.s
+20 cinit CODE >2587:/tmp/xcXDffFAm/driver_tmp_1.s
+21 cinit CODE >2588:/tmp/xcXDffFAm/driver_tmp_1.s
+22 cinit CODE >2591:/tmp/xcXDffFAm/driver_tmp_1.s
+23 cinit CODE >2597:/tmp/xcXDffFAm/driver_tmp_1.s
+23 cinit CODE >2599:/tmp/xcXDffFAm/driver_tmp_1.s
+24 cinit CODE >2600:/tmp/xcXDffFAm/driver_tmp_1.s
+4 intentry CODE >68:/home/mateus/MPLABXProjects/L7.X/main.c
+768 text43 CODE >45:/home/mateus/MPLABXProjects/L7.X/key.c
+768 text43 CODE >46:/home/mateus/MPLABXProjects/L7.X/key.c
+76F text43 CODE >46:/home/mateus/MPLABXProjects/L7.X/key.c
+773 text43 CODE >46:/home/mateus/MPLABXProjects/L7.X/key.c
+777 text43 CODE >47:/home/mateus/MPLABXProjects/L7.X/key.c
+778 text43 CODE >48:/home/mateus/MPLABXProjects/L7.X/key.c
+779 text43 CODE >51:/home/mateus/MPLABXProjects/L7.X/key.c
+4CC text42 CODE >58:/home/mateus/MPLABXProjects/L7.X/key.c
+4CD text42 CODE >62:/home/mateus/MPLABXProjects/L7.X/key.c
+4D0 text42 CODE >62:/home/mateus/MPLABXProjects/L7.X/key.c
+4D3 text42 CODE >62:/home/mateus/MPLABXProjects/L7.X/key.c
+4D8 text42 CODE >63:/home/mateus/MPLABXProjects/L7.X/key.c
+4E2 text42 CODE >64:/home/mateus/MPLABXProjects/L7.X/key.c
+4E7 text42 CODE >65:/home/mateus/MPLABXProjects/L7.X/key.c
+4E8 text42 CODE >66:/home/mateus/MPLABXProjects/L7.X/key.c
+4EA text42 CODE >67:/home/mateus/MPLABXProjects/L7.X/key.c
+4EB text42 CODE >68:/home/mateus/MPLABXProjects/L7.X/key.c
+4ED text42 CODE >71:/home/mateus/MPLABXProjects/L7.X/key.c
+4F7 text42 CODE >72:/home/mateus/MPLABXProjects/L7.X/key.c
+4F8 text42 CODE >73:/home/mateus/MPLABXProjects/L7.X/key.c
+4FA text42 CODE >74:/home/mateus/MPLABXProjects/L7.X/key.c
+4FB text42 CODE >75:/home/mateus/MPLABXProjects/L7.X/key.c
+4FD text42 CODE >77:/home/mateus/MPLABXProjects/L7.X/key.c
+4FE text41 CODE >68:/home/mateus/MPLABXProjects/L7.X/main.c
+4FE text41 CODE >74:/home/mateus/MPLABXProjects/L7.X/main.c
+506 text41 CODE >75:/home/mateus/MPLABXProjects/L7.X/main.c
+50F text41 CODE >77:/home/mateus/MPLABXProjects/L7.X/main.c
+513 text41 CODE >78:/home/mateus/MPLABXProjects/L7.X/main.c
+514 text41 CODE >81:/home/mateus/MPLABXProjects/L7.X/main.c
+51C text41 CODE >82:/home/mateus/MPLABXProjects/L7.X/main.c
+520 text41 CODE >83:/home/mateus/MPLABXProjects/L7.X/main.c
+526 text41 CODE >84:/home/mateus/MPLABXProjects/L7.X/main.c
+527 text41 CODE >89:/home/mateus/MPLABXProjects/L7.X/main.c
+7F1 text40 CODE >20:/home/mateus/MPLABXProjects/L7.X/battery.c
+7F1 text40 CODE >25:/home/mateus/MPLABXProjects/L7.X/battery.c
+756 text39 CODE >44:/home/mateus/MPLABXProjects/L7.X/spi.c
+759 text39 CODE >45:/home/mateus/MPLABXProjects/L7.X/spi.c
+75A text39 CODE >46:/home/mateus/MPLABXProjects/L7.X/spi.c
+75B text39 CODE >47:/home/mateus/MPLABXProjects/L7.X/spi.c
+75D text39 CODE >48:/home/mateus/MPLABXProjects/L7.X/spi.c
+763 text39 CODE >49:/home/mateus/MPLABXProjects/L7.X/spi.c
+766 text39 CODE >50:/home/mateus/MPLABXProjects/L7.X/spi.c
+767 text39 CODE >51:/home/mateus/MPLABXProjects/L7.X/spi.c
+7C7 text38 CODE >70:/home/mateus/MPLABXProjects/L7.X/spi.c
+7CA text38 CODE >71:/home/mateus/MPLABXProjects/L7.X/spi.c
+7D0 text38 CODE >72:/home/mateus/MPLABXProjects/L7.X/spi.c
+744 text37 CODE >128:/home/mateus/MPLABXProjects/L7.X/compass.c
+747 text37 CODE >130:/home/mateus/MPLABXProjects/L7.X/compass.c
+747 text37 CODE >131:/home/mateus/MPLABXProjects/L7.X/compass.c
+74D text37 CODE >132:/home/mateus/MPLABXProjects/L7.X/compass.c
+755 text37 CODE >134:/home/mateus/MPLABXProjects/L7.X/compass.c
+732 text36 CODE >101:/home/mateus/MPLABXProjects/L7.X/compass.c
+735 text36 CODE >103:/home/mateus/MPLABXProjects/L7.X/compass.c
+735 text36 CODE >104:/home/mateus/MPLABXProjects/L7.X/compass.c
+73B text36 CODE >105:/home/mateus/MPLABXProjects/L7.X/compass.c
+743 text36 CODE >107:/home/mateus/MPLABXProjects/L7.X/compass.c
+720 text35 CODE >155:/home/mateus/MPLABXProjects/L7.X/compass.c
+723 text35 CODE >157:/home/mateus/MPLABXProjects/L7.X/compass.c
+723 text35 CODE >158:/home/mateus/MPLABXProjects/L7.X/compass.c
+729 text35 CODE >159:/home/mateus/MPLABXProjects/L7.X/compass.c
+731 text35 CODE >161:/home/mateus/MPLABXProjects/L7.X/compass.c
+6A3 text34 CODE >40:/home/mateus/MPLABXProjects/L7.X/compass.c
+6A3 text34 CODE >42:/home/mateus/MPLABXProjects/L7.X/compass.c
+6A3 text34 CODE >43:/home/mateus/MPLABXProjects/L7.X/compass.c
+6A9 text34 CODE >45:/home/mateus/MPLABXProjects/L7.X/compass.c
+6AF text34 CODE >46:/home/mateus/MPLABXProjects/L7.X/compass.c
+6B5 text34 CODE >47:/home/mateus/MPLABXProjects/L7.X/compass.c
+6BB text34 CODE >50:/home/mateus/MPLABXProjects/L7.X/compass.c
+66E text33 CODE >37:/home/mateus/MPLABXProjects/L7.X/delay.c
+671 text33 CODE >39:/home/mateus/MPLABXProjects/L7.X/delay.c
+671 text33 CODE >40:/home/mateus/MPLABXProjects/L7.X/delay.c
+673 text33 CODE >41:/home/mateus/MPLABXProjects/L7.X/delay.c
+673 text33 CODE >42:/home/mateus/MPLABXProjects/L7.X/delay.c
+679 text33 CODE >43:/home/mateus/MPLABXProjects/L7.X/delay.c
+67A text33 CODE >44:/home/mateus/MPLABXProjects/L7.X/delay.c
+682 text33 CODE >45:/home/mateus/MPLABXProjects/L7.X/delay.c
+688 text33 CODE >46:/home/mateus/MPLABXProjects/L7.X/delay.c
+653 text32 CODE >70:/home/mateus/MPLABXProjects/L7.X/delay.c
+656 text32 CODE >72:/home/mateus/MPLABXProjects/L7.X/delay.c
+656 text32 CODE >73:/home/mateus/MPLABXProjects/L7.X/delay.c
+658 text32 CODE >75:/home/mateus/MPLABXProjects/L7.X/delay.c
+65E text32 CODE >76:/home/mateus/MPLABXProjects/L7.X/delay.c
+65F text32 CODE >77:/home/mateus/MPLABXProjects/L7.X/delay.c
+667 text32 CODE >78:/home/mateus/MPLABXProjects/L7.X/delay.c
+66D text32 CODE >79:/home/mateus/MPLABXProjects/L7.X/delay.c
+490 text31 CODE >84:/home/mateus/MPLABXProjects/L7.X/adc.c
+493 text31 CODE >89:/home/mateus/MPLABXProjects/L7.X/adc.c
+495 text31 CODE >89:/home/mateus/MPLABXProjects/L7.X/adc.c
+49B text31 CODE >89:/home/mateus/MPLABXProjects/L7.X/adc.c
+4A1 text31 CODE >89:/home/mateus/MPLABXProjects/L7.X/adc.c
+4A8 text31 CODE >92:/home/mateus/MPLABXProjects/L7.X/adc.c
+4B1 text31 CODE >93:/home/mateus/MPLABXProjects/L7.X/adc.c
+4B2 text31 CODE >94:/home/mateus/MPLABXProjects/L7.X/adc.c
+4B3 text31 CODE >95:/home/mateus/MPLABXProjects/L7.X/adc.c
+4B6 text31 CODE >96:/home/mateus/MPLABXProjects/L7.X/adc.c
+4B9 text31 CODE >98:/home/mateus/MPLABXProjects/L7.X/adc.c
+4BA text31 CODE >99:/home/mateus/MPLABXProjects/L7.X/adc.c
+4BE text31 CODE >100:/home/mateus/MPLABXProjects/L7.X/adc.c
+4C4 text31 CODE >101:/home/mateus/MPLABXProjects/L7.X/adc.c
+4C6 text31 CODE >102:/home/mateus/MPLABXProjects/L7.X/adc.c
+4C7 text31 CODE >103:/home/mateus/MPLABXProjects/L7.X/adc.c
+4CB text31 CODE >104:/home/mateus/MPLABXProjects/L7.X/adc.c
+798 text30 CODE >75:/home/mateus/MPLABXProjects/L7.X/sensor.c
+798 text30 CODE >76:/home/mateus/MPLABXProjects/L7.X/sensor.c
+7A4 text30 CODE >77:/home/mateus/MPLABXProjects/L7.X/sensor.c
+52E text29 CODE >93:/home/mateus/MPLABXProjects/L7.X/main.c
+52E text29 CODE >94:/home/mateus/MPLABXProjects/L7.X/main.c
+539 text29 CODE >95:/home/mateus/MPLABXProjects/L7.X/main.c
+539 text29 CODE >96:/home/mateus/MPLABXProjects/L7.X/main.c
+53B text29 CODE >97:/home/mateus/MPLABXProjects/L7.X/main.c
+540 text29 CODE >97:/home/mateus/MPLABXProjects/L7.X/main.c
+544 text29 CODE >97:/home/mateus/MPLABXProjects/L7.X/main.c
+548 text29 CODE >98:/home/mateus/MPLABXProjects/L7.X/main.c
+552 text29 CODE >98:/home/mateus/MPLABXProjects/L7.X/main.c
+556 text29 CODE >100:/home/mateus/MPLABXProjects/L7.X/main.c
+55C text29 CODE >101:/home/mateus/MPLABXProjects/L7.X/main.c
+77A text28 CODE >36:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+77D text28 CODE >38:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+77F text28 CODE >39:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+783 text28 CODE >40:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+789 text28 CODE >41:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+7BD text27 CODE >47:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+7C0 text27 CODE >48:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+7C6 text27 CODE >49:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+70E text26 CODE >65:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+711 text26 CODE >66:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+717 text26 CODE >67:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+71F text26 CODE >68:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+6FC text25 CODE >86:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+6FF text25 CODE >87:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+705 text25 CODE >88:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+70D text25 CODE >89:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+5AF text24 CODE >95:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+5AF text24 CODE >96:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+5B0 text24 CODE >97:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+5C2 text24 CODE >97:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+5C6 text24 CODE >96:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+5D2 text24 CODE >96:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+5D6 text24 CODE >98:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+78A text23 CODE >33:/home/mateus/MPLABXProjects/L7.X/led_rgb.c
+78D text23 CODE >35:/home/mateus/MPLABXProjects/L7.X/led_rgb.c
+791 text23 CODE >37:/home/mateus/MPLABXProjects/L7.X/led_rgb.c
+797 text23 CODE >38:/home/mateus/MPLABXProjects/L7.X/led_rgb.c
+5FC text22 CODE >80:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5FC text22 CODE >81:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5FD text22 CODE >82:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5FD text22 CODE >83:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5FE text22 CODE >84:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5FF text22 CODE >85:/home/mateus/MPLABXProjects/L7.X/pwm.c
+600 text22 CODE >86:/home/mateus/MPLABXProjects/L7.X/pwm.c
+600 text22 CODE >87:/home/mateus/MPLABXProjects/L7.X/pwm.c
+601 text22 CODE >88:/home/mateus/MPLABXProjects/L7.X/pwm.c
+602 text22 CODE >89:/home/mateus/MPLABXProjects/L7.X/pwm.c
+603 text22 CODE >90:/home/mateus/MPLABXProjects/L7.X/pwm.c
+603 text22 CODE >91:/home/mateus/MPLABXProjects/L7.X/pwm.c
+604 text22 CODE >92:/home/mateus/MPLABXProjects/L7.X/pwm.c
+605 text22 CODE >93:/home/mateus/MPLABXProjects/L7.X/pwm.c
+606 text22 CODE >94:/home/mateus/MPLABXProjects/L7.X/pwm.c
+606 text22 CODE >95:/home/mateus/MPLABXProjects/L7.X/pwm.c
+607 text22 CODE >96:/home/mateus/MPLABXProjects/L7.X/pwm.c
+608 text22 CODE >97:/home/mateus/MPLABXProjects/L7.X/pwm.c
+609 text22 CODE >81:/home/mateus/MPLABXProjects/L7.X/pwm.c
+60D text22 CODE >81:/home/mateus/MPLABXProjects/L7.X/pwm.c
+612 text22 CODE >81:/home/mateus/MPLABXProjects/L7.X/pwm.c
+615 text22 CODE >81:/home/mateus/MPLABXProjects/L7.X/pwm.c
+618 text22 CODE >81:/home/mateus/MPLABXProjects/L7.X/pwm.c
+61B text22 CODE >98:/home/mateus/MPLABXProjects/L7.X/pwm.c
+586 text21 CODE >62:/home/mateus/MPLABXProjects/L7.X/pwm.c
+586 text21 CODE >63:/home/mateus/MPLABXProjects/L7.X/pwm.c
+58E text21 CODE >64:/home/mateus/MPLABXProjects/L7.X/pwm.c
+59A text21 CODE >65:/home/mateus/MPLABXProjects/L7.X/pwm.c
+59B text21 CODE >66:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5A2 text21 CODE >67:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5AE text21 CODE >69:/home/mateus/MPLABXProjects/L7.X/pwm.c
+61C text20 CODE >25:/home/mateus/MPLABXProjects/L7.X/delay.c
+61C text20 CODE >28:/home/mateus/MPLABXProjects/L7.X/delay.c
+620 text20 CODE >29:/home/mateus/MPLABXProjects/L7.X/delay.c
+621 text20 CODE >30:/home/mateus/MPLABXProjects/L7.X/delay.c
+623 text20 CODE >31:/home/mateus/MPLABXProjects/L7.X/delay.c
+629 text20 CODE >32:/home/mateus/MPLABXProjects/L7.X/delay.c
+62A text20 CODE >29:/home/mateus/MPLABXProjects/L7.X/delay.c
+631 text20 CODE >34:/home/mateus/MPLABXProjects/L7.X/delay.c
+637 text20 CODE >35:/home/mateus/MPLABXProjects/L7.X/delay.c
+416 text19 CODE >57:/home/mateus/MPLABXProjects/L7.X/sensor.c
+416 text19 CODE >60:/home/mateus/MPLABXProjects/L7.X/sensor.c
+41E text19 CODE >61:/home/mateus/MPLABXProjects/L7.X/sensor.c
+424 text19 CODE >63:/home/mateus/MPLABXProjects/L7.X/sensor.c
+42A text19 CODE >65:/home/mateus/MPLABXProjects/L7.X/sensor.c
+432 text19 CODE >66:/home/mateus/MPLABXProjects/L7.X/sensor.c
+43D text19 CODE >67:/home/mateus/MPLABXProjects/L7.X/sensor.c
+442 text19 CODE >67:/home/mateus/MPLABXProjects/L7.X/sensor.c
+445 text19 CODE >67:/home/mateus/MPLABXProjects/L7.X/sensor.c
+44F text19 CODE >69:/home/mateus/MPLABXProjects/L7.X/sensor.c
+453 text19 CODE >70:/home/mateus/MPLABXProjects/L7.X/sensor.c
+3D0 text18 CODE >5:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3D0 text18 CODE >13:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3D4 text18 CODE >14:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3DA text18 CODE >15:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3DC text18 CODE >16:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3DD text18 CODE >17:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3DE text18 CODE >17:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3E2 text18 CODE >17:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3E4 text18 CODE >18:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3E8 text18 CODE >16:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3EC text18 CODE >21:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3ED text18 CODE >21:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3F1 text18 CODE >21:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3F3 text18 CODE >22:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3F5 text18 CODE >22:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3F9 text18 CODE >22:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+3FD text18 CODE >23:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+400 text18 CODE >23:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+403 text18 CODE >24:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+404 text18 CODE >26:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+405 text18 CODE >26:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+409 text18 CODE >26:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+40B text18 CODE >27:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+411 text18 CODE >29:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+415 text18 CODE >30:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwdiv.c
+454 text17 CODE >5:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+454 text17 CODE >12:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+45C text17 CODE >13:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+45E text17 CODE >14:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+45F text17 CODE >15:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+460 text17 CODE >15:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+464 text17 CODE >15:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+466 text17 CODE >16:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+46A text17 CODE >14:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+46E text17 CODE >19:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+470 text17 CODE >19:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+474 text17 CODE >19:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+478 text17 CODE >20:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+47B text17 CODE >20:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+47E text17 CODE >21:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+47F text17 CODE >21:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+483 text17 CODE >21:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+485 text17 CODE >22:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+48B text17 CODE >24:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+48F text17 CODE >25:/opt/microchip/xc8/v2.41/pic/sources/c90/common/lwmod.c
+160 text16 CODE >505:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+163 text16 CODE >550:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+165 text16 CODE >553:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+166 text16 CODE >555:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+16C text16 CODE >558:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+175 text16 CODE >559:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+176 text16 CODE >565:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+177 text16 CODE >661:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+183 text16 CODE >661:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+186 text16 CODE >661:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+189 text16 CODE >661:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+18C text16 CODE >1285:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+198 text16 CODE >1287:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+19C text16 CODE >1288:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+1A0 text16 CODE >1289:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+1A3 text16 CODE >1289:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+1A5 text16 CODE >1331:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+1A7 text16 CODE >1332:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+1BA text16 CODE >1332:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+1BE text16 CODE >1332:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+1C3 text16 CODE >1331:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+1CD text16 CODE >1464:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+1D3 text16 CODE >1465:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+1DC text16 CODE >1498:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+1DE text16 CODE >1500:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+1DF text16 CODE >1515:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+20D text16 CODE >1550:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+216 text16 CODE >1500:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+21F text16 CODE >553:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+22F text16 CODE >1564:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+233 text16 CODE >1567:/opt/microchip/xc8/v2.41/pic/sources/c90/common/doprnt.c
+27 text15 CODE >105:/home/mateus/MPLABXProjects/L7.X/main.c
+27 text15 CODE >106:/home/mateus/MPLABXProjects/L7.X/main.c
+30 text15 CODE >107:/home/mateus/MPLABXProjects/L7.X/main.c
+3B text15 CODE >110:/home/mateus/MPLABXProjects/L7.X/main.c
+5D text15 CODE >111:/home/mateus/MPLABXProjects/L7.X/main.c
+63 text15 CODE >112:/home/mateus/MPLABXProjects/L7.X/main.c
+6E text15 CODE >115:/home/mateus/MPLABXProjects/L7.X/main.c
+76 text15 CODE >116:/home/mateus/MPLABXProjects/L7.X/main.c
+7E text15 CODE >117:/home/mateus/MPLABXProjects/L7.X/main.c
+85 text15 CODE >117:/home/mateus/MPLABXProjects/L7.X/main.c
+89 text15 CODE >117:/home/mateus/MPLABXProjects/L7.X/main.c
+9A text15 CODE >118:/home/mateus/MPLABXProjects/L7.X/main.c
+A0 text15 CODE >119:/home/mateus/MPLABXProjects/L7.X/main.c
+A1 text15 CODE >120:/home/mateus/MPLABXProjects/L7.X/main.c
+AC text15 CODE >121:/home/mateus/MPLABXProjects/L7.X/main.c
+B5 text15 CODE >122:/home/mateus/MPLABXProjects/L7.X/main.c
+BC text15 CODE >122:/home/mateus/MPLABXProjects/L7.X/main.c
+C0 text15 CODE >122:/home/mateus/MPLABXProjects/L7.X/main.c
+D1 text15 CODE >123:/home/mateus/MPLABXProjects/L7.X/main.c
+D7 text15 CODE >124:/home/mateus/MPLABXProjects/L7.X/main.c
+D8 text15 CODE >125:/home/mateus/MPLABXProjects/L7.X/main.c
+E4 text15 CODE >126:/home/mateus/MPLABXProjects/L7.X/main.c
+ED text15 CODE >127:/home/mateus/MPLABXProjects/L7.X/main.c
+F4 text15 CODE >127:/home/mateus/MPLABXProjects/L7.X/main.c
+F8 text15 CODE >127:/home/mateus/MPLABXProjects/L7.X/main.c
+109 text15 CODE >128:/home/mateus/MPLABXProjects/L7.X/main.c
+10F text15 CODE >129:/home/mateus/MPLABXProjects/L7.X/main.c
+110 text15 CODE >130:/home/mateus/MPLABXProjects/L7.X/main.c
+115 text15 CODE >131:/home/mateus/MPLABXProjects/L7.X/main.c
+11E text15 CODE >132:/home/mateus/MPLABXProjects/L7.X/main.c
+125 text15 CODE >132:/home/mateus/MPLABXProjects/L7.X/main.c
+129 text15 CODE >132:/home/mateus/MPLABXProjects/L7.X/main.c
+13A text15 CODE >133:/home/mateus/MPLABXProjects/L7.X/main.c
+141 text15 CODE >135:/home/mateus/MPLABXProjects/L7.X/main.c
+150 text15 CODE >136:/home/mateus/MPLABXProjects/L7.X/main.c
+15F text15 CODE >137:/home/mateus/MPLABXProjects/L7.X/main.c
+7D9 text14 CODE >26:/home/mateus/MPLABXProjects/L7.X/key.c
+7D9 text14 CODE >27:/home/mateus/MPLABXProjects/L7.X/key.c
+7DC text14 CODE >28:/home/mateus/MPLABXProjects/L7.X/key.c
+7DD text14 CODE >30:/home/mateus/MPLABXProjects/L7.X/key.c
+7DE text14 CODE >31:/home/mateus/MPLABXProjects/L7.X/key.c
+7DF text14 CODE >32:/home/mateus/MPLABXProjects/L7.X/key.c
+7E0 text14 CODE >33:/home/mateus/MPLABXProjects/L7.X/key.c
+7B1 text13 CODE >86:/home/mateus/MPLABXProjects/L7.X/key.c
+7B1 text13 CODE >87:/home/mateus/MPLABXProjects/L7.X/key.c
+7B4 text13 CODE >88:/home/mateus/MPLABXProjects/L7.X/key.c
+7B8 text13 CODE >89:/home/mateus/MPLABXProjects/L7.X/key.c
+7B9 text13 CODE >90:/home/mateus/MPLABXProjects/L7.X/key.c
+7BB text13 CODE >92:/home/mateus/MPLABXProjects/L7.X/key.c
+7BC text13 CODE >93:/home/mateus/MPLABXProjects/L7.X/key.c
+7E8 text12 CODE >54:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+7E8 text12 CODE >55:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+7EE text12 CODE >56:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+7E1 text11 CODE >24:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+7E1 text11 CODE >25:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+7E4 text11 CODE >26:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+7E7 text11 CODE >28:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+6D4 text10 CODE >74:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+6D4 text10 CODE >75:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+6DC text10 CODE >76:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+6E2 text10 CODE >77:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+6E3 text10 CODE >78:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+6E9 text10 CODE >80:/home/mateus/MPLABXProjects/L7.X/lcd8x2.c
+7F0 text9 CODE >25:/home/mateus/MPLABXProjects/L7.X/led_rgb.c
+7F0 text9 CODE >28:/home/mateus/MPLABXProjects/L7.X/led_rgb.c
+5D7 text8 CODE >28:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5D7 text8 CODE >31:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5DA text8 CODE >32:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5DB text8 CODE >34:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5DD text8 CODE >37:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5E1 text8 CODE >38:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5E5 text8 CODE >39:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5E6 text8 CODE >40:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5E8 text8 CODE >42:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5EC text8 CODE >43:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5ED text8 CODE >44:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5EE text8 CODE >45:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5EF text8 CODE >47:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5F0 text8 CODE >48:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5F2 text8 CODE >49:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5F3 text8 CODE >51:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5F7 text8 CODE >52:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5FA text8 CODE >53:/home/mateus/MPLABXProjects/L7.X/pwm.c
+5FB text8 CODE >55:/home/mateus/MPLABXProjects/L7.X/pwm.c
+2E5 text7 CODE >20:/home/mateus/MPLABXProjects/L7.X/adc.c
+2E8 text7 CODE >22:/home/mateus/MPLABXProjects/L7.X/adc.c
+2E9 text7 CODE >23:/home/mateus/MPLABXProjects/L7.X/adc.c
+2E9 text7 CODE >24:/home/mateus/MPLABXProjects/L7.X/adc.c
+2EC text7 CODE >25:/home/mateus/MPLABXProjects/L7.X/adc.c
+2EF text7 CODE >26:/home/mateus/MPLABXProjects/L7.X/adc.c
+2F0 text7 CODE >27:/home/mateus/MPLABXProjects/L7.X/adc.c
+2F0 text7 CODE >28:/home/mateus/MPLABXProjects/L7.X/adc.c
+2F3 text7 CODE >29:/home/mateus/MPLABXProjects/L7.X/adc.c
+2F6 text7 CODE >30:/home/mateus/MPLABXProjects/L7.X/adc.c
+2F7 text7 CODE >31:/home/mateus/MPLABXProjects/L7.X/adc.c
+2F7 text7 CODE >32:/home/mateus/MPLABXProjects/L7.X/adc.c
+2FA text7 CODE >33:/home/mateus/MPLABXProjects/L7.X/adc.c
+2FD text7 CODE >34:/home/mateus/MPLABXProjects/L7.X/adc.c
+2FE text7 CODE >35:/home/mateus/MPLABXProjects/L7.X/adc.c
+2FE text7 CODE >36:/home/mateus/MPLABXProjects/L7.X/adc.c
+301 text7 CODE >37:/home/mateus/MPLABXProjects/L7.X/adc.c
+304 text7 CODE >38:/home/mateus/MPLABXProjects/L7.X/adc.c
+305 text7 CODE >39:/home/mateus/MPLABXProjects/L7.X/adc.c
+305 text7 CODE >40:/home/mateus/MPLABXProjects/L7.X/adc.c
+308 text7 CODE >41:/home/mateus/MPLABXProjects/L7.X/adc.c
+30B text7 CODE >42:/home/mateus/MPLABXProjects/L7.X/adc.c
+30C text7 CODE >43:/home/mateus/MPLABXProjects/L7.X/adc.c
+30C text7 CODE >44:/home/mateus/MPLABXProjects/L7.X/adc.c
+30F text7 CODE >45:/home/mateus/MPLABXProjects/L7.X/adc.c
+312 text7 CODE >46:/home/mateus/MPLABXProjects/L7.X/adc.c
+313 text7 CODE >47:/home/mateus/MPLABXProjects/L7.X/adc.c
+313 text7 CODE >48:/home/mateus/MPLABXProjects/L7.X/adc.c
+316 text7 CODE >49:/home/mateus/MPLABXProjects/L7.X/adc.c
+319 text7 CODE >50:/home/mateus/MPLABXProjects/L7.X/adc.c
+31A text7 CODE >51:/home/mateus/MPLABXProjects/L7.X/adc.c
+31A text7 CODE >52:/home/mateus/MPLABXProjects/L7.X/adc.c
+31D text7 CODE >53:/home/mateus/MPLABXProjects/L7.X/adc.c
+320 text7 CODE >54:/home/mateus/MPLABXProjects/L7.X/adc.c
+321 text7 CODE >55:/home/mateus/MPLABXProjects/L7.X/adc.c
+321 text7 CODE >56:/home/mateus/MPLABXProjects/L7.X/adc.c
+324 text7 CODE >57:/home/mateus/MPLABXProjects/L7.X/adc.c
+327 text7 CODE >58:/home/mateus/MPLABXProjects/L7.X/adc.c
+328 text7 CODE >59:/home/mateus/MPLABXProjects/L7.X/adc.c
+328 text7 CODE >60:/home/mateus/MPLABXProjects/L7.X/adc.c
+32B text7 CODE >61:/home/mateus/MPLABXProjects/L7.X/adc.c
+32E text7 CODE >62:/home/mateus/MPLABXProjects/L7.X/adc.c
+32F text7 CODE >63:/home/mateus/MPLABXProjects/L7.X/adc.c
+32F text7 CODE >64:/home/mateus/MPLABXProjects/L7.X/adc.c
+332 text7 CODE >65:/home/mateus/MPLABXProjects/L7.X/adc.c
+335 text7 CODE >66:/home/mateus/MPLABXProjects/L7.X/adc.c
+336 text7 CODE >22:/home/mateus/MPLABXProjects/L7.X/adc.c
+338 text7 CODE >22:/home/mateus/MPLABXProjects/L7.X/adc.c
+33B text7 CODE >22:/home/mateus/MPLABXProjects/L7.X/adc.c
+33E text7 CODE >22:/home/mateus/MPLABXProjects/L7.X/adc.c
+341 text7 CODE >22:/home/mateus/MPLABXProjects/L7.X/adc.c
+344 text7 CODE >22:/home/mateus/MPLABXProjects/L7.X/adc.c
+347 text7 CODE >22:/home/mateus/MPLABXProjects/L7.X/adc.c
+34A text7 CODE >22:/home/mateus/MPLABXProjects/L7.X/adc.c
+34D text7 CODE >22:/home/mateus/MPLABXProjects/L7.X/adc.c
+350 text7 CODE >22:/home/mateus/MPLABXProjects/L7.X/adc.c
+353 text7 CODE >22:/home/mateus/MPLABXProjects/L7.X/adc.c
+356 text7 CODE >22:/home/mateus/MPLABXProjects/L7.X/adc.c
+359 text7 CODE >70:/home/mateus/MPLABXProjects/L7.X/adc.c
+35F text7 CODE >72:/home/mateus/MPLABXProjects/L7.X/adc.c
+368 text7 CODE >73:/home/mateus/MPLABXProjects/L7.X/adc.c
+36B text7 CODE >74:/home/mateus/MPLABXProjects/L7.X/adc.c
+36E text7 CODE >75:/home/mateus/MPLABXProjects/L7.X/adc.c
+371 text7 CODE >76:/home/mateus/MPLABXProjects/L7.X/adc.c
+689 text6 CODE >37:/home/mateus/MPLABXProjects/L7.X/sensor.c
+689 text6 CODE >40:/home/mateus/MPLABXProjects/L7.X/sensor.c
+68C text6 CODE >41:/home/mateus/MPLABXProjects/L7.X/sensor.c
+68F text6 CODE >42:/home/mateus/MPLABXProjects/L7.X/sensor.c
+692 text6 CODE >45:/home/mateus/MPLABXProjects/L7.X/sensor.c
+698 text6 CODE >48:/home/mateus/MPLABXProjects/L7.X/sensor.c
+699 text6 CODE >49:/home/mateus/MPLABXProjects/L7.X/sensor.c
+69C text6 CODE >50:/home/mateus/MPLABXProjects/L7.X/sensor.c
+6A2 text6 CODE >52:/home/mateus/MPLABXProjects/L7.X/sensor.c
+6EA text5 CODE >25:/home/mateus/MPLABXProjects/L7.X/sensor.c
+6ED text5 CODE >26:/home/mateus/MPLABXProjects/L7.X/sensor.c
+6F2 text5 CODE >27:/home/mateus/MPLABXProjects/L7.X/sensor.c
+6F3 text5 CODE >28:/home/mateus/MPLABXProjects/L7.X/sensor.c
+6F9 text5 CODE >29:/home/mateus/MPLABXProjects/L7.X/sensor.c
+6FB text5 CODE >30:/home/mateus/MPLABXProjects/L7.X/sensor.c
+6BC text4 CODE >29:/home/mateus/MPLABXProjects/L7.X/serial.c
+6BC text4 CODE >65:/home/mateus/MPLABXProjects/L7.X/serial.c
+6C0 text4 CODE >66:/home/mateus/MPLABXProjects/L7.X/serial.c
+6C1 text4 CODE >67:/home/mateus/MPLABXProjects/L7.X/serial.c
+6C2 text4 CODE >68:/home/mateus/MPLABXProjects/L7.X/serial.c
+6C5 text4 CODE >69:/home/mateus/MPLABXProjects/L7.X/serial.c
+6C6 text4 CODE >70:/home/mateus/MPLABXProjects/L7.X/serial.c
+6C7 text4 CODE >71:/home/mateus/MPLABXProjects/L7.X/serial.c
+6CA text4 CODE >72:/home/mateus/MPLABXProjects/L7.X/serial.c
+6CB text4 CODE >73:/home/mateus/MPLABXProjects/L7.X/serial.c
+6CC text4 CODE >74:/home/mateus/MPLABXProjects/L7.X/serial.c
+6CF text4 CODE >75:/home/mateus/MPLABXProjects/L7.X/serial.c
+6D2 text4 CODE >76:/home/mateus/MPLABXProjects/L7.X/serial.c
+6D3 text4 CODE >77:/home/mateus/MPLABXProjects/L7.X/serial.c
+638 text3 CODE >23:/home/mateus/MPLABXProjects/L7.X/spi.c
+638 text3 CODE >24:/home/mateus/MPLABXProjects/L7.X/spi.c
+63B text3 CODE >25:/home/mateus/MPLABXProjects/L7.X/spi.c
+63E text3 CODE >26:/home/mateus/MPLABXProjects/L7.X/spi.c
+63F text3 CODE >27:/home/mateus/MPLABXProjects/L7.X/spi.c
+640 text3 CODE >28:/home/mateus/MPLABXProjects/L7.X/spi.c
+641 text3 CODE >29:/home/mateus/MPLABXProjects/L7.X/spi.c
+642 text3 CODE >30:/home/mateus/MPLABXProjects/L7.X/spi.c
+645 text3 CODE >31:/home/mateus/MPLABXProjects/L7.X/spi.c
+646 text3 CODE >32:/home/mateus/MPLABXProjects/L7.X/spi.c
+647 text3 CODE >33:/home/mateus/MPLABXProjects/L7.X/spi.c
+64A text3 CODE >34:/home/mateus/MPLABXProjects/L7.X/spi.c
+64B text3 CODE >35:/home/mateus/MPLABXProjects/L7.X/spi.c
+651 text3 CODE >36:/home/mateus/MPLABXProjects/L7.X/spi.c
+652 text3 CODE >37:/home/mateus/MPLABXProjects/L7.X/spi.c
+7A5 text2 CODE >50:/home/mateus/MPLABXProjects/L7.X/main.c
+7A5 text2 CODE >52:/home/mateus/MPLABXProjects/L7.X/main.c
+7A8 text2 CODE >53:/home/mateus/MPLABXProjects/L7.X/main.c
+7A9 text2 CODE >54:/home/mateus/MPLABXProjects/L7.X/main.c
+7AB text2 CODE >55:/home/mateus/MPLABXProjects/L7.X/main.c
+7AF text2 CODE >56:/home/mateus/MPLABXProjects/L7.X/main.c
+7B0 text2 CODE >57:/home/mateus/MPLABXProjects/L7.X/main.c
+55D text1 CODE >60:/home/mateus/MPLABXProjects/L7.X/main.c
+55D text1 CODE >61:/home/mateus/MPLABXProjects/L7.X/main.c
+563 text1 CODE >62:/home/mateus/MPLABXProjects/L7.X/main.c
+56E text1 CODE >63:/home/mateus/MPLABXProjects/L7.X/main.c
+574 text1 CODE >64:/home/mateus/MPLABXProjects/L7.X/main.c
+57A text1 CODE >65:/home/mateus/MPLABXProjects/L7.X/main.c
+585 text1 CODE >66:/home/mateus/MPLABXProjects/L7.X/main.c
+234 maintext CODE >150:/home/mateus/MPLABXProjects/L7.X/main.c
+234 maintext CODE >151:/home/mateus/MPLABXProjects/L7.X/main.c
+234 maintext CODE >154:/home/mateus/MPLABXProjects/L7.X/main.c
+239 maintext CODE >155:/home/mateus/MPLABXProjects/L7.X/main.c
+23E maintext CODE >156:/home/mateus/MPLABXProjects/L7.X/main.c
+243 maintext CODE >157:/home/mateus/MPLABXProjects/L7.X/main.c
+248 maintext CODE >158:/home/mateus/MPLABXProjects/L7.X/main.c
+24D maintext CODE >159:/home/mateus/MPLABXProjects/L7.X/main.c
+252 maintext CODE >161:/home/mateus/MPLABXProjects/L7.X/main.c
+257 maintext CODE >162:/home/mateus/MPLABXProjects/L7.X/main.c
+25C maintext CODE >163:/home/mateus/MPLABXProjects/L7.X/main.c
+261 maintext CODE >164:/home/mateus/MPLABXProjects/L7.X/main.c
+266 maintext CODE >165:/home/mateus/MPLABXProjects/L7.X/main.c
+26B maintext CODE >167:/home/mateus/MPLABXProjects/L7.X/main.c
+26C maintext CODE >168:/home/mateus/MPLABXProjects/L7.X/main.c
+272 maintext CODE >170:/home/mateus/MPLABXProjects/L7.X/main.c
+278 maintext CODE >171:/home/mateus/MPLABXProjects/L7.X/main.c
+27D maintext CODE >172:/home/mateus/MPLABXProjects/L7.X/main.c
+287 maintext CODE >174:/home/mateus/MPLABXProjects/L7.X/main.c
+28C maintext CODE >175:/home/mateus/MPLABXProjects/L7.X/main.c
+291 maintext CODE >178:/home/mateus/MPLABXProjects/L7.X/main.c
+299 maintext CODE >179:/home/mateus/MPLABXProjects/L7.X/main.c
+29E maintext CODE >180:/home/mateus/MPLABXProjects/L7.X/main.c
+2A0 maintext CODE >180:/home/mateus/MPLABXProjects/L7.X/main.c
+2A4 maintext CODE >182:/home/mateus/MPLABXProjects/L7.X/main.c
+2A8 maintext CODE >183:/home/mateus/MPLABXProjects/L7.X/main.c
+2AD maintext CODE >184:/home/mateus/MPLABXProjects/L7.X/main.c
+2AE maintext CODE >185:/home/mateus/MPLABXProjects/L7.X/main.c
+2B7 maintext CODE >185:/home/mateus/MPLABXProjects/L7.X/main.c
+2BB maintext CODE >185:/home/mateus/MPLABXProjects/L7.X/main.c
+2BF maintext CODE >186:/home/mateus/MPLABXProjects/L7.X/main.c
+2CD maintext CODE >187:/home/mateus/MPLABXProjects/L7.X/main.c
+2DB maintext CODE >188:/home/mateus/MPLABXProjects/L7.X/main.c
+7D1 clrtext CODE >2565:/tmp/xcXDffFAm/driver_tmp_1.s
+7D1 clrtext CODE >2566:/tmp/xcXDffFAm/driver_tmp_1.s
+7D2 clrtext CODE >2567:/tmp/xcXDffFAm/driver_tmp_1.s
+7D2 clrtext CODE >2568:/tmp/xcXDffFAm/driver_tmp_1.s
+7D3 clrtext CODE >2569:/tmp/xcXDffFAm/driver_tmp_1.s
+7D4 clrtext CODE >2570:/tmp/xcXDffFAm/driver_tmp_1.s
+7D5 clrtext CODE >2571:/tmp/xcXDffFAm/driver_tmp_1.s
+7D6 clrtext CODE >2572:/tmp/xcXDffFAm/driver_tmp_1.s
+7D7 clrtext CODE >2573:/tmp/xcXDffFAm/driver_tmp_1.s
+7D8 clrtext CODE >2574:/tmp/xcXDffFAm/driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+key_pressed@state 20 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+___latbits 2 0 ABS 0 - dist/default/production/L7.X.production.o
+___lwmod@counter 2D 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__Hspace_0 7F2 0 ABS 0 - -
+__Hspace_1 3D1 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_compass_set_scale E40 0 CODE 0 text35 dist/default/production/L7.X.production.o
+__end_of_sensor_init D46 0 CODE 0 text6 dist/default/production/L7.X.production.o
+_GO F9 0 ABS 0 - dist/default/production/L7.X.production.o
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+key_read@key 72 0 COMMON 1 cstackCOMMON dist/default/production/L7.X.production.o
+delay_s@i 23 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+_led_rgb_init FE0 0 CODE 0 text9 dist/default/production/L7.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_ADIE 466 0 ABS 0 - dist/default/production/L7.X.production.o
+_ADIF 66 0 ABS 0 - dist/default/production/L7.X.production.o
+_ADON F8 0 ABS 0 - dist/default/production/L7.X.production.o
+_ANS0 C40 0 ABS 0 - dist/default/production/L7.X.production.o
+_ANS1 C41 0 ABS 0 - dist/default/production/L7.X.production.o
+_ANS2 C42 0 ABS 0 - dist/default/production/L7.X.production.o
+_ANS3 C43 0 ABS 0 - dist/default/production/L7.X.production.o
+_ANS4 C44 0 ABS 0 - dist/default/production/L7.X.production.o
+_ANS8 C48 0 ABS 0 - dist/default/production/L7.X.production.o
+_ANS9 C49 0 ABS 0 - dist/default/production/L7.X.production.o
+_BRGH 4C2 0 ABS 0 - dist/default/production/L7.X.production.o
+_CREN C4 0 ABS 0 - dist/default/production/L7.X.production.o
+_FERR C2 0 ABS 0 - dist/default/production/L7.X.production.o
+_OERR C1 0 ABS 0 - dist/default/production/L7.X.production.o
+_RBIE 5B 0 ABS 0 - dist/default/production/L7.X.production.o
+_RBIF 58 0 ABS 0 - dist/default/production/L7.X.production.o
+_RCIE 465 0 ABS 0 - dist/default/production/L7.X.production.o
+_RCIF 65 0 ABS 0 - dist/default/production/L7.X.production.o
+_SPEN C7 0 ABS 0 - dist/default/production/L7.X.production.o
+_T0IE 5D 0 ABS 0 - dist/default/production/L7.X.production.o
+_T0IF 5A 0 ABS 0 - dist/default/production/L7.X.production.o
+_SREN C5 0 ABS 0 - dist/default/production/L7.X.production.o
+_SYNC 4C4 0 ABS 0 - dist/default/production/L7.X.production.o
+_TMR0 1 0 ABS 0 - dist/default/production/L7.X.production.o
+_TXEN 4C5 0 ABS 0 - dist/default/production/L7.X.production.o
+_TXIE 464 0 ABS 0 - dist/default/production/L7.X.production.o
+_TXIF 64 0 ABS 0 - dist/default/production/L7.X.production.o
+_WCOL A7 0 ABS 0 - dist/default/production/L7.X.production.o
+___sp 0 0 STACK 2 stack /tmp/xcXDffFAm/driver_tmp_19.o
+_main 468 0 CODE 0 maintext dist/default/production/L7.X.production.o
+_sVar 52 0 BANK0 1 bssBANK0 dist/default/production/L7.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production/L7.X.production.o
+start 18 0 CODE 0 init /tmp/xcXDffFAm/driver_tmp_19.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+?_sensorLine_read 23 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production/L7.X.production.o
+__end_of_follow_line 2C0 0 CODE 0 text15 dist/default/production/L7.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+__end_of_sensorLine_read 8A8 0 CODE 0 text19 dist/default/production/L7.X.production.o
+__pbitbssCOMMON 3D0 FFFFFCAA COMMON 1 bitbssCOMMON dist/default/production/L7.X.production.o
+__end_of_duty_cycle_control ABA 0 CODE 0 text29 dist/default/production/L7.X.production.o
+__HdataCOMMON 0 0 ABS 0 dataCOMMON -
+__end_of_lcd_clear FDE 0 CODE 0 text12 dist/default/production/L7.X.production.o
+_n_press 4B 0 BANK0 1 bssBANK0 dist/default/production/L7.X.production.o
+intlevel0 0 0 ENTRY 0 functab /tmp/xcXDffFAm/driver_tmp_19.o
+intlevel1 0 0 ENTRY 0 functab /tmp/xcXDffFAm/driver_tmp_19.o
+intlevel2 0 0 ENTRY 0 functab /tmp/xcXDffFAm/driver_tmp_19.o
+intlevel3 0 0 ENTRY 0 functab /tmp/xcXDffFAm/driver_tmp_19.o
+intlevel4 0 0 ENTRY 0 functab /tmp/xcXDffFAm/driver_tmp_19.o
+intlevel5 0 0 ENTRY 0 functab /tmp/xcXDffFAm/driver_tmp_19.o
+spi_send_command@command_byte 23 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__end_of_spi_send_data F8E 0 CODE 0 text27 dist/default/production/L7.X.production.o
+duty_cycle_control@dc 2C 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__end_of_t0_init F62 0 CODE 0 text2 dist/default/production/L7.X.production.o
+__end_of_spi_send_command F14 0 CODE 0 text28 dist/default/production/L7.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production/L7.X.production.o
+compass_set_datarate@mode 22 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+compass_set_operativemode@mode 22 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+_led_rgb_set_color F14 0 CODE 0 text23 dist/default/production/L7.X.production.o
+_sensor_power DD4 0 CODE 0 text5 dist/default/production/L7.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+__pidataCOMMON FDE 0 CODE 0 idataCOMMON dist/default/production/L7.X.production.o
+_delay_s CA6 0 CODE 0 text32 dist/default/production/L7.X.production.o
+__end_ofatan@coeff_a 748 0 STRING 0 strings dist/default/production/L7.X.production.o
+__end_ofatan@coeff_b 770 0 STRING 0 strings dist/default/production/L7.X.production.o
+_lcd_clear FD0 0 CODE 0 text12 dist/default/production/L7.X.production.o
+delay_ms@cnt 20 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+pwm_set@duty_cycle 22 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+lcd_putchar@c 24 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+adc_read@adc_result 23 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+_ADRESH 1E 0 ABS 0 - dist/default/production/L7.X.production.o
+_ADRESL 9E 0 ABS 0 - dist/default/production/L7.X.production.o
+_duty_cycle_control A5C 0 CODE 0 text29 dist/default/production/L7.X.production.o
+__end_of_compass_set_operativemode E88 0 CODE 0 text36 dist/default/production/L7.X.production.o
+_SSPCONbits 14 0 ABS 0 - dist/default/production/L7.X.production.o
+__LdataCOMMON 0 0 ABS 0 dataCOMMON -
+_CCPR1L 15 0 ABS 0 - dist/default/production/L7.X.production.o
+_CCPR2L 1B 0 ABS 0 - dist/default/production/L7.X.production.o
+__end_of_led_rgb_init FE2 0 CODE 0 text9 dist/default/production/L7.X.production.o
+_sensorLine_read 82C 0 CODE 0 text19 dist/default/production/L7.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+___lwmod@divisor 28 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__end_of___lwdiv 82C 0 CODE 0 text18 dist/default/production/L7.X.production.o
+__end_of___lwmod 920 0 CODE 0 text17 dist/default/production/L7.X.production.o
+___stackhi 0 0 ABS 0 - /tmp/xcXDffFAm/driver_tmp_19.o
+___stacklo 0 0 ABS 0 - /tmp/xcXDffFAm/driver_tmp_19.o
+_dpowers 704 0 STRING 0 strings dist/default/production/L7.X.production.o
+_lcd_putchar DF8 0 CODE 0 text25 dist/default/production/L7.X.production.o
+___lwdiv@quotient 26 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__LidataCOMMON 0 0 ABS 0 idataCOMMON -
+___lwmod@dividend 2A 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+start_initialization 1E 0 CODE 0 cinit dist/default/production/L7.X.production.o
+_key_pressed F62 0 CODE 0 text13 dist/default/production/L7.X.production.o
+__end_of_sensor_power DF8 0 CODE 0 text5 dist/default/production/L7.X.production.o
+_spi_exchange EAC 0 CODE 0 text39 dist/default/production/L7.X.production.o
+_pwm_init BAE 0 CODE 0 text8 dist/default/production/L7.X.production.o
+_keyStateChanged 77 0 COMMON 1 bssCOMMON dist/default/production/L7.X.production.o
+clear_ram0 FA2 0 CODE 0 clrtext dist/default/production/L7.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+_SSPBUF 13 0 ABS 0 - dist/default/production/L7.X.production.o
+key_read@key_old 7B 0 COMMON 1 dataCOMMON dist/default/production/L7.X.production.o
+__end_of_pwm_init BF8 0 CODE 0 text8 dist/default/production/L7.X.production.o
+__end_of_serial_init DA8 0 CODE 0 text4 dist/default/production/L7.X.production.o
+_TMR0IE 5D 0 ABS 0 - dist/default/production/L7.X.production.o
+_TMR0IF 5A 0 ABS 0 - dist/default/production/L7.X.production.o
+_TMR2IF 61 0 ABS 0 - dist/default/production/L7.X.production.o
+_TMR2ON 92 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISA0 428 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISA1 429 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISA2 42A 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISA3 42B 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISA5 42D 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISB0 430 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISB1 431 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISB2 432 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISB4 434 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISB5 435 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISB6 436 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISC0 438 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISC1 439 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISC2 43A 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISC3 43B 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISC4 43C 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISC5 43D 0 ABS 0 - dist/default/production/L7.X.production.o
+_battery_init FE2 0 CODE 0 text40 dist/default/production/L7.X.production.o
+___int_sp 0 0 STACK 2 stack /tmp/xcXDffFAm/driver_tmp_19.o
+sensor_power@state 22 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+sensorLine_read@line_reading 28 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__Hcinit 4E 0 CODE 0 cinit -
+__Hidloc 4008 0 IDLOC 5 idloc -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 702 0 STRING 0 strings dist/default/production/L7.X.production.o
+___lwdiv@counter 25 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+_key_init FB2 0 CODE 0 text14 dist/default/production/L7.X.production.o
+_key_read 998 0 CODE 0 text42 dist/default/production/L7.X.production.o
+__end_of_sprintf 468 0 CODE 0 text16 dist/default/production/L7.X.production.o
+spi_write@data 21 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+_pwm_direction BF8 0 CODE 0 text22 dist/default/production/L7.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 1E 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 5 idloc -
+__Lstack 0 0 STACK 2 stack -
+__end_of_key_init FC2 0 CODE 0 text14 dist/default/production/L7.X.production.o
+__end_of_key_read 9FC 0 CODE 0 text42 dist/default/production/L7.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 18 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 18 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_delayus_variable 79 0 COMMON 1 bssCOMMON dist/default/production/L7.X.production.o
+__end_of_spi_exchange ED0 0 CODE 0 text39 dist/default/production/L7.X.production.o
+_CKE 4A6 0 ABS 0 - dist/default/production/L7.X.production.o
+_CKP A4 0 ABS 0 - dist/default/production/L7.X.production.o
+_GIE 5F 0 ABS 0 - dist/default/production/L7.X.production.o
+_PR2 92 0 ABS 0 - dist/default/production/L7.X.production.o
+_RA1 29 0 ABS 0 - dist/default/production/L7.X.production.o
+_RA5 2D 0 ABS 0 - dist/default/production/L7.X.production.o
+_RA6 2E 0 ABS 0 - dist/default/production/L7.X.production.o
+_RB0 30 0 ABS 0 - dist/default/production/L7.X.production.o
+_RC0 38 0 ABS 0 - dist/default/production/L7.X.production.o
+_RX9 C6 0 ABS 0 - dist/default/production/L7.X.production.o
+_SMP 4A7 0 ABS 0 - dist/default/production/L7.X.production.o
+_TX9 4C6 0 ABS 0 - dist/default/production/L7.X.production.o
+__S0 7F2 0 ABS 0 - -
+__S1 7C 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_isr 9FC 0 CODE 0 text41 dist/default/production/L7.X.production.o
+_compass_init D46 0 CODE 0 text34 dist/default/production/L7.X.production.o
+_t0_init F4A 0 CODE 0 text2 dist/default/production/L7.X.production.o
+__end_of_lcd_show_cursor DD4 0 CODE 0 text10 dist/default/production/L7.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production/L7.X.production.o
+?_sensorNear_read 26 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__end_of_compass_set_datarate EAC 0 CODE 0 text37 dist/default/production/L7.X.production.o
+__HidataCOMMON 0 0 ABS 0 idataCOMMON -
+spi_send_data@data 21 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+sprintf@val 3B 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__end_of_sensorNear_read F4A 0 CODE 0 text30 dist/default/production/L7.X.production.o
+__end_of_isr A5C 0 CODE 0 text41 dist/default/production/L7.X.production.o
+__end_of_battery_init FE4 0 CODE 0 text40 dist/default/production/L7.X.production.o
+_lcd_goto E1C 0 CODE 0 text26 dist/default/production/L7.X.production.o
+_lcd_init FC2 0 CODE 0 text11 dist/default/production/L7.X.production.o
+_lcd_puts B5E 0 CODE 0 text24 dist/default/production/L7.X.production.o
+delay_s@cnt 22 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+led_rgb_set_color@command_byte 22 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+duty_cycle_control@nearSensorData 2E 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__stringtab 6E4 0 STRING 0 strings dist/default/production/L7.X.production.o
+reset_vec 0 0 CODE 0 reset_vec /tmp/xcXDffFAm/driver_tmp_19.o
+_lineSensor 51 0 BANK0 1 bssBANK0 dist/default/production/L7.X.production.o
+_compass_set_operativemode E64 0 CODE 0 text36 dist/default/production/L7.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of_lcd_goto E40 0 CODE 0 text26 dist/default/production/L7.X.production.o
+__end_of_lcd_init FD0 0 CODE 0 text11 dist/default/production/L7.X.production.o
+__end_of_lcd_puts BAE 0 CODE 0 text24 dist/default/production/L7.X.production.o
+__end_of_pwm_set B5E 0 CODE 0 text21 dist/default/production/L7.X.production.o
+sprintf@flag 39 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+sprintf@prec 3A 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__ptext10 DA8 0 CODE 0 text10 dist/default/production/L7.X.production.o
+__ptext11 FC2 0 CODE 0 text11 dist/default/production/L7.X.production.o
+__ptext12 FD0 0 CODE 0 text12 dist/default/production/L7.X.production.o
+__ptext13 F62 0 CODE 0 text13 dist/default/production/L7.X.production.o
+__ptext14 FB2 0 CODE 0 text14 dist/default/production/L7.X.production.o
+__ptext15 4E 0 CODE 0 text15 dist/default/production/L7.X.production.o
+__ptext16 2C0 0 CODE 0 text16 dist/default/production/L7.X.production.o
+__ptext17 8A8 0 CODE 0 text17 dist/default/production/L7.X.production.o
+__ptext18 7A0 0 CODE 0 text18 dist/default/production/L7.X.production.o
+__ptext19 82C 0 CODE 0 text19 dist/default/production/L7.X.production.o
+__ptext20 C38 0 CODE 0 text20 dist/default/production/L7.X.production.o
+__ptext21 B0C 0 CODE 0 text21 dist/default/production/L7.X.production.o
+__ptext22 BF8 0 CODE 0 text22 dist/default/production/L7.X.production.o
+__ptext23 F14 0 CODE 0 text23 dist/default/production/L7.X.production.o
+__ptext24 B5E 0 CODE 0 text24 dist/default/production/L7.X.production.o
+__ptext25 DF8 0 CODE 0 text25 dist/default/production/L7.X.production.o
+__ptext26 E1C 0 CODE 0 text26 dist/default/production/L7.X.production.o
+__ptext27 F7A 0 CODE 0 text27 dist/default/production/L7.X.production.o
+__ptext28 EF4 0 CODE 0 text28 dist/default/production/L7.X.production.o
+__ptext29 A5C 0 CODE 0 text29 dist/default/production/L7.X.production.o
+__ptext30 F30 0 CODE 0 text30 dist/default/production/L7.X.production.o
+__ptext31 920 0 CODE 0 text31 dist/default/production/L7.X.production.o
+__ptext32 CA6 0 CODE 0 text32 dist/default/production/L7.X.production.o
+__ptext33 CDC 0 CODE 0 text33 dist/default/production/L7.X.production.o
+__ptext34 D46 0 CODE 0 text34 dist/default/production/L7.X.production.o
+__ptext35 E40 0 CODE 0 text35 dist/default/production/L7.X.production.o
+__ptext36 E64 0 CODE 0 text36 dist/default/production/L7.X.production.o
+__ptext37 E88 0 CODE 0 text37 dist/default/production/L7.X.production.o
+__ptext38 F8E 0 CODE 0 text38 dist/default/production/L7.X.production.o
+__ptext39 EAC 0 CODE 0 text39 dist/default/production/L7.X.production.o
+__ptext40 FE2 0 CODE 0 text40 dist/default/production/L7.X.production.o
+__ptext41 9FC 0 CODE 0 text41 dist/default/production/L7.X.production.o
+__ptext42 998 0 CODE 0 text42 dist/default/production/L7.X.production.o
+__ptext43 ED0 0 CODE 0 text43 dist/default/production/L7.X.production.o
+_delay_big_us C38 0 CODE 0 text20 dist/default/production/L7.X.production.o
+___lwdiv 7A0 0 CODE 0 text18 dist/default/production/L7.X.production.o
+___lwmod 8A8 0 CODE 0 text17 dist/default/production/L7.X.production.o
+_lcd_show_cursor DA8 0 CODE 0 text10 dist/default/production/L7.X.production.o
+__pmaintext 468 0 CODE 0 maintext dist/default/production/L7.X.production.o
+key_read@port 71 0 COMMON 1 cstackCOMMON dist/default/production/L7.X.production.o
+pwm_set@channel 20 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_sensor_init D12 0 CODE 0 text6 dist/default/production/L7.X.production.o
+_sensorNear_read F30 0 CODE 0 text30 dist/default/production/L7.X.production.o
+__end_of_compass_init D78 0 CODE 0 text34 dist/default/production/L7.X.production.o
+___lwdiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+main@keyIn 4A 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+delay_big_us@cnt 20 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+_key_debounce ED0 0 CODE 0 text43 dist/default/production/L7.X.production.o
+pwm_direction@dir 20 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__end_of_lcd_putchar E1C 0 CODE 0 text25 dist/default/production/L7.X.production.o
+_ADCON0bits 1F 0 ABS 0 - dist/default/production/L7.X.production.o
+_ADCON1bits 9F 0 ABS 0 - dist/default/production/L7.X.production.o
+_adc_init 5CA 0 CODE 0 text7 dist/default/production/L7.X.production.o
+_adc_read 920 0 CODE 0 text31 dist/default/production/L7.X.production.o
+__end_of__stringtab 704 0 STRING 0 strings dist/default/production/L7.X.production.o
+_follow_line 4E 0 CODE 0 text15 dist/default/production/L7.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 76 0 COMMON 1 bssCOMMON dist/default/production/L7.X.production.o
+follow_line@led_color 48 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__HbitbssCOMMON 0 0 ABS 0 bitbssCOMMON -
+__end_of_pwm_direction C38 0 CODE 0 text22 dist/default/production/L7.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+delay_ms@i 21 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__Lend_init 18 0 CODE 0 end_init -
+__end_of_adc_init 6E4 0 CODE 0 text7 dist/default/production/L7.X.production.o
+__end_of_adc_read 998 0 CODE 0 text31 dist/default/production/L7.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__end_of_key_pressed F7A 0 CODE 0 text13 dist/default/production/L7.X.production.o
+end_of_initialization 46 0 CODE 0 cinit dist/default/production/L7.X.production.o
+__Hintentry 18 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___lwdiv@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+?___lwdiv 20 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+?___lwmod 28 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+compass_set_scale@scale 22 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+isr@portB 75 0 COMMON 1 cstackCOMMON dist/default/production/L7.X.production.o
+__end_of_welcome_message B0C 0 CODE 0 text1 dist/default/production/L7.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+_debounce 78 0 COMMON 1 bssCOMMON dist/default/production/L7.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+spi_exchange@data 20 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__end_of_delay_big_us C70 0 CODE 0 text20 dist/default/production/L7.X.production.o
+__ptext1 ABA 0 CODE 0 text1 dist/default/production/L7.X.production.o
+__ptext2 F4A 0 CODE 0 text2 dist/default/production/L7.X.production.o
+__ptext3 C70 0 CODE 0 text3 dist/default/production/L7.X.production.o
+__ptext4 D78 0 CODE 0 text4 dist/default/production/L7.X.production.o
+__ptext5 DD4 0 CODE 0 text5 dist/default/production/L7.X.production.o
+__ptext6 D12 0 CODE 0 text6 dist/default/production/L7.X.production.o
+__ptext7 5CA 0 CODE 0 text7 dist/default/production/L7.X.production.o
+__ptext8 BAE 0 CODE 0 text8 dist/default/production/L7.X.production.o
+__ptext9 FE0 0 CODE 0 text9 dist/default/production/L7.X.production.o
+adc_read@adc_channel 25 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+_sprintf 2C0 0 CODE 0 text16 dist/default/production/L7.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+sprintf@ap 38 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+sprintf@sp 3D 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+spi_send_command@command 22 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+delay_big_us@i 22 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__end_of_delay_s CDC 0 CODE 0 text32 dist/default/production/L7.X.production.o
+__end_of_spi_write FA2 0 CODE 0 text38 dist/default/production/L7.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of_key_debounce EF4 0 CODE 0 text43 dist/default/production/L7.X.production.o
+__end_of__initialization 46 0 CODE 0 cinit dist/default/production/L7.X.production.o
+_delay_ms CDC 0 CODE 0 text33 dist/default/production/L7.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+_keyPressed 3D0 FFFFFCAA COMMON 1 bitbssCOMMON dist/default/production/L7.X.production.o
+__end_of_compass_set_scale E64 0 CODE 0 text35 dist/default/production/L7.X.production.o
+_spi_send_data F7A 0 CODE 0 text27 dist/default/production/L7.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_welcome_message ABA 0 CODE 0 text1 dist/default/production/L7.X.production.o
+lcd_puts@s 25 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__end_of_delay_ms D12 0 CODE 0 text33 dist/default/production/L7.X.production.o
+_spi_write F8E 0 CODE 0 text38 dist/default/production/L7.X.production.o
+?_duty_cycle_control 28 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production/L7.X.production.o
+key_debounce@cycles 70 0 COMMON 1 cstackCOMMON dist/default/production/L7.X.production.o
+__Hend_init 1E 0 CODE 0 end_init -
+lcd_goto@pos 24 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+adc_init@adc_channel 21 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+sprintf@c 3E 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+sprintf@f 2E 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__end_of_main 5CA 0 CODE 0 maintext dist/default/production/L7.X.production.o
+_CCP2CONbits 1D 0 ABS 0 - dist/default/production/L7.X.production.o
+_ANS10 C4A 0 ABS 0 - dist/default/production/L7.X.production.o
+_ANS11 C4B 0 ABS 0 - dist/default/production/L7.X.production.o
+_ANS12 C4C 0 ABS 0 - dist/default/production/L7.X.production.o
+_ANS13 C4D 0 ABS 0 - dist/default/production/L7.X.production.o
+_ANSEL 188 0 ABS 0 - dist/default/production/L7.X.production.o
+__end_of_dpowers 718 0 STRING 0 strings dist/default/production/L7.X.production.o
+_DC2B0 EC 0 ABS 0 - dist/default/production/L7.X.production.o
+_DC2B1 ED 0 ABS 0 - dist/default/production/L7.X.production.o
+_IOCB6 4B6 0 ABS 0 - dist/default/production/L7.X.production.o
+?_sprintf 2E 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+_PORTA 5 0 ABS 0 - dist/default/production/L7.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production/L7.X.production.o
+_RCREG 1A 0 ABS 0 - dist/default/production/L7.X.production.o
+_SPBRG 99 0 ABS 0 - dist/default/production/L7.X.production.o
+_SSPEN A5 0 ABS 0 - dist/default/production/L7.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production/L7.X.production.o
+_TXREG 19 0 ABS 0 - dist/default/production/L7.X.production.o
+_WPUB6 4AE 0 ABS 0 - dist/default/production/L7.X.production.o
+_Xcorr 4D 0 BANK0 1 bssBANK0 dist/default/production/L7.X.production.o
+_Ycorr 4F 0 BANK0 1 bssBANK0 dist/default/production/L7.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+lcd_show_cursor@on 24 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+interrupt_function 8 0 CODE 0 intentry dist/default/production/L7.X.production.o
+_dummy 76 0 COMMON 1 bssCOMMON dist/default/production/L7.X.production.o
+_nRBPU 40F 0 ABS 0 - dist/default/production/L7.X.production.o
+_SSPSTATbits 94 0 ABS 0 - dist/default/production/L7.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production/L7.X.production.o
+__LbitbssCOMMON 0 0 ABS 0 bitbssCOMMON -
+?_adc_read 20 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+_pwm_set B0C 0 CODE 0 text21 dist/default/production/L7.X.production.o
+_compass_set_datarate E88 0 CODE 0 text37 dist/default/production/L7.X.production.o
+__initialization 1E 0 CODE 0 cinit dist/default/production/L7.X.production.o
+led_rgb_set_color@led_color 21 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+__pbssBANK0 4B 0 BANK0 1 bssBANK0 dist/default/production/L7.X.production.o
+__pdataCOMMON 7B 0 COMMON 1 dataCOMMON dist/default/production/L7.X.production.o
+_T2CONbits 12 0 ABS 0 - dist/default/production/L7.X.production.o
+_spi_send_command EF4 0 CODE 0 text28 dist/default/production/L7.X.production.o
+_spi_init C70 0 CODE 0 text3 dist/default/production/L7.X.production.o
+_serial_init D78 0 CODE 0 text4 dist/default/production/L7.X.production.o
+__pstrings 6E4 0 STRING 0 strings dist/default/production/L7.X.production.o
+__end_of_led_rgb_set_color F30 0 CODE 0 text23 dist/default/production/L7.X.production.o
+_CCP1CONbits 17 0 ABS 0 - dist/default/production/L7.X.production.o
+__end_of_spi_init CA6 0 CODE 0 text3 dist/default/production/L7.X.production.o
+follow_line@duty_cycle 46 0 BANK0 1 cstackBANK0 dist/default/production/L7.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text18 0 3D0 7A0 422 2
+cstackCOMMON 1 70 70 C 1
+cstackBANK0 1 20 20 3B 1
+intentry 0 4 8 36E 2
+reset_vec 0 0 0 3 2
+strings 0 372 6E4 5E 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

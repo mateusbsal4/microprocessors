@@ -1,0 +1,25 @@
+ build/default/production/main.d  \
+ build/default/production/main.p1:  \
+ main.c  \
+/opt/microchip/mplabx/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/language_support.h  \
+pwm.h  \
+/opt/microchip/mplabx/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f886.h  \
+../RL2/sensor.h  \
+../RL2/key.h  \
+../RL2/serial.h  \
+/opt/microchip/mplabx/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/xc.h  \
+../RL2/always.h  \
+/opt/microchip/mplabx/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/eeprom_routines.h  \
+/opt/microchip/mplabx/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/pic_chip_select.h  \
+/opt/microchip/mplabx/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/__null.h  \
+/opt/microchip/mplabx/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/builtins.h  \
+../RL2/led_rgb.h  \
+/opt/microchip/mplabx/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/htc.h  \
+../RL2/delay.h  \
+../RL2/compass.h  \
+../RL2/battery.h  \
+../RL2/spi.h  \
+../RL2/lcd8x2.h  \
+/opt/microchip/mplabx/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/pic.h  \
+/opt/microchip/mplabx/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/__size_t.h  \
+/opt/microchip/mplabx/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/__at.h 
