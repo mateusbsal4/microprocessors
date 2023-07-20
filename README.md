@@ -1,6 +1,6 @@
-# Microprocessors PIC16F886 Projects
+# Microprocessors for Automation and Robotics
 
-This repository contains eight different C projects developed for the PIC16F886 microprocessor. The first four projects were implemented and tested successfully on a little mobile robot which had the PIC embedded. The last two projects are designed specifically for the SimulIDE simulator. Each project focuses on specific functionalities and features of the microcontroller and the robot. Below, you'll find a brief description of each project.
+This repository contains six different C projects developed for the PIC16F886 microprocessor. The first four projects were implemented and tested successfully on a little mobile robot which had the PIC embedded. The last two projects are designed specifically for the SimulIDE simulator. Each project focuses on specific functionalities and features of the microcontroller and the robot. Below, you'll find a brief description of each project.
 
 ## 1. ADC_L4 - Analog-to-Digital Conversion (ADC) and Proximity Sensing
 
